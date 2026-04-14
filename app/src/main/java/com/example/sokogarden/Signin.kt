@@ -52,6 +52,9 @@ class Signin : AppCompatActivity() {
 
             helper.post_login(api,data)
 
+            email.text.clear()
+            password.text.clear()
+
 
         }
     }
