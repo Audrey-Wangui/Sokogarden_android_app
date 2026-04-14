@@ -40,7 +40,7 @@ class Signup : AppCompatActivity() {
         signupButton.setOnClickListener {
 
 //            Specify the API endpoint
-            val api = "https://kbenkamotho.alwaysdata.net/api/signup"
+            val api = "https://audreywangui.alwaysdata.net/api/signup"
 
 //            Create a RequestParams ~ it is where we are going to hold all the data
             val data = RequestParams()
