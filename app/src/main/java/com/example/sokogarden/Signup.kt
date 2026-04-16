@@ -62,9 +62,9 @@ class Signup : AppCompatActivity() {
             password.text.clear()
             phone.text.clear()
 
-////            Intent to the MainActivity
-//            val intent = Intent(applicationContext, MainActivity::class.java)
-//            startActivity(intent)
+//           Intent to the MainActivity
+            val intent = Intent(applicationContext, MainActivity::class.java)
+           startActivity(intent)
 
 
         }
