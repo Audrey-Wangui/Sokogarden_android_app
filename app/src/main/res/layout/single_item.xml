@@ -38,7 +38,10 @@
                 android:layout_height="250sp"
                 android:id="@+id/product_photo"
                 android:src="@mipmap/ic_launcher"
-                android:scaleType="fitCenter"
+                android:scaleType="fitXY"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+
                 android:layout_marginTop="5dp"/>
 
 <!--            Below is a textview for the product_cost-->

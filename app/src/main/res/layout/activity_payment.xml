@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PaymentActivity">
+
+    <!--    Below is a TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete Payment with M-Pesa"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/orange"
+        android:background="@drawable/shape"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <!--    Below  is a cardview that holds all of our contents -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="25dp">
+
+            <!--        Below is a linearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white">
+
+                <!--            Below is a TextView where the name of the product shall be binded -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProductName"
+                    android:text="Product Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/blue"/>
+
+                <!--            Below is an ImageView for the product image -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/imgProduct"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <!--            Below is the TextView for the product_cost -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProductCost"
+                    android:text="Kes 1000"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"/>
+
+                <!--            Below is a TextView for the product description -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProductDescription"
+                    android:text="Product Description"
+                    android:textSize="20sp"
+                    android:textColor="@color/blue"/>
+
+                <!--            Below is an EditText for entering phone number-->
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:hint="Enter Phone Number e.g 2547xxxxxxxx"
+                    android:background="@color/violet"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <!--            Below is a button to complete payment button -->
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pay"
+                    android:text="PAY NOW"
+                    android:textSize="25sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginLeft="70dp"
+                    android:backgroundTint="@color/orange"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>
